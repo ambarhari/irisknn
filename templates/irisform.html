@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Form Input Angka</title>
+    <style>
+      h1 {
+        color: #333;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      label {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-size: 20px;
+        color: #333;
+        font-weight: bold;
+      }
+
+      input[type="number"] {
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        font-size: 18px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Input Angka</h1>
+    <form
+      action="http://localhost:8080/predictor/"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <label for="angka1">Sepal Length:</label>
+      <input type="number" name="sepallength" id="angka1" step="any" required />
+      <br />
+      <label for="angka2">Sepal Widht:</label>
+      <input type="number" name="sepalwidth" id="angka2" step="any" required />
+      <br />
+      <label for="petallength">Petal Length:</label>
+      <input type="number" name="petallength" id="angka3" step="any" required />
+      <br />
+      <label for="petalwidth">Petal Widht:</label>
+      <input type="number" name="petalwidth" id="angka4" step="any" required />
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
